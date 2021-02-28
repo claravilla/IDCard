@@ -1,0 +1,93 @@
+body {
+  background-color: hsl(185, 75%, 39%);
+  max-width: 1440px;
+  font-family: 'Kumbh Sans', sans-serif;
+  color:hsl(227, 10%, 46%);
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: top -600px left -200px, top 450px right -250px;
+}
+
+
+/* @media (min-width: 375px) {
+    .card-container {
+        margin:3%;
+    } */
+
+hr {
+    margin:0;
+    height: 0;
+    border-top:1px solid hsl(0, 0%, 59%);
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* --- Background images --- */
+.top-background {
+    position:absolute;
+    margin-top: -30%;
+    margin-left: -20%;
+}
+
+.bottom-background {
+    position:absolute;
+    margin-left: 50%;
+    margin-top:30%
+}
+
+.card-background {
+    border-radius: 0.5rem 0.5rem 0 0;
+    position:absolute;
+    left:0px;
+    top:-90px;
+    
+}
+
+
+/* ---Card--- */
+
+.img-card {
+    border:5px solid white;
+    border-radius: 100%;
+    position:relative;
+    z-index:1;
+
+}
+
+.card-container {
+    border-radius: 0.5rem;
+    width:350px;
+    position:relative; /* relative to where it would have been in respect of the body (which is the parent) but still in the html flow so the capture stays at the bottom*/
+    margin:25% auto;
+    background-color: white;
+    text-align:center;
+    padding-bottom: 15px;
+    font-size: 18px;
+
+}
+
+.card-bottom {
+    display:flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    line-height: 2rem;
+  
+}
+
+.card-numbers {
+    text-align:center;
+}
+
+.heading {
+    font-weight: bold;
+    color: hsl(229, 23%, 23%);
+   
+}
+
+.top-line {
+    position:relative;
+    top:50px;
+}
